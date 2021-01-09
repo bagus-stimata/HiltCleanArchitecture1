@@ -9,10 +9,8 @@ import androidx.room.Query
 import com.example.hiltcleanarchitecture1.Constants
 import com.example.hiltcleanarchitecture1.data.local.entity.ItemEntity
 import com.example.hiltcleanarchitecture1.data.local.entity.NoteEntity
-import io.reactivex.Flowable
-import io.reactivex.Maybe
-import io.reactivex.Observable
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Maybe
+import io.reactivex.rxjava3.core.Observable
 
 
 /**

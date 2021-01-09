@@ -1,8 +1,8 @@
 package com.example.hiltcleanarchitecture1.domain.repository
 
 import com.example.hiltcleanarchitecture1.domain.model.Note
-import io.reactivex.Observable
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Observable
+import io.reactivex.rxjava3.core.Single
 
 interface NoteRepository : Repository {
 //    fun insertNote(note: Note)

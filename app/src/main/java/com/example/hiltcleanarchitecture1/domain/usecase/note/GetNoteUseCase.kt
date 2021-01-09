@@ -4,7 +4,7 @@ import com.example.hiltcleanarchitecture1.domain.exception.AlertException
 import com.example.hiltcleanarchitecture1.domain.model.Note
 import com.example.hiltcleanarchitecture1.domain.repository.NoteRepository
 import com.example.hiltcleanarchitecture1.domain.usecase.UseCase
-import io.reactivex.Observable
+import io.reactivex.rxjava3.core.Observable
 import javax.inject.Inject
 
 open class GetNoteUseCase  @Inject constructor(
