@@ -8,29 +8,30 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.hiltcleanarchitecture1.R
 import com.example.hiltcleanarchitecture1.databinding.MainActivityBinding
+import com.example.hiltcleanarchitecture1.presentation.ui.test.BlankFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-//    val viewModel : MainViewModel by viewModels()
+    val viewModel : MainViewModel by viewModels()
     
-//    lateinit var binder: MainActivityBinding
+    lateinit var binder: MainActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_activity)
+//        setContentView(R.layout.main_activity)
 
-//        binder = MainActivityBinding.inflate(layoutInflater)
-//        setContentView(binder.root)
+        binder = MainActivityBinding.inflate(layoutInflater)
+        setContentView(binder.root)
 
 
 
-//        val fragmentManager = supportFragmentManager
-//        fragmentManager
-//            .beginTransaction()
-//            .replace(R.id.nav_fragment, ListFragment())
-//            .commit()
+        val fragmentManager = supportFragmentManager
+        fragmentManager
+            .beginTransaction()
+            .replace(R.id.nav_fragment, BlankFragment())
+            .commit()
 
 
 //        setSupportActionBar(binder.toolbar)
