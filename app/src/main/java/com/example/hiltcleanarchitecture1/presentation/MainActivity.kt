@@ -13,15 +13,16 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    val viewModel : MainViewModel by viewModels()
+//    val viewModel : MainViewModel by viewModels()
     
-    lateinit var binder: MainActivityBinding
+//    lateinit var binder: MainActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-        binder = MainActivityBinding.inflate(layoutInflater)
-        setContentView(binder.root)
+        setContentView(R.layout.main_activity)
+
+//        binder = MainActivityBinding.inflate(layoutInflater)
+//        setContentView(binder.root)
 
 
 
