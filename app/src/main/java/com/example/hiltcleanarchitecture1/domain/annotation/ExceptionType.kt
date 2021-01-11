@@ -1,12 +1,12 @@
-package com.example.cleanarchitecture.domain.annotation
+package com.example.hiltcleanarchitecture1.domain.annotation
 
 import androidx.annotation.IntDef
-import com.example.cleanarchitecture.domain.annotation.ExceptionType.Companion.ALERT
-import com.example.cleanarchitecture.domain.annotation.ExceptionType.Companion.DIALOG
-import com.example.cleanarchitecture.domain.annotation.ExceptionType.Companion.INLINE
-import com.example.cleanarchitecture.domain.annotation.ExceptionType.Companion.REDIRECT
-import com.example.cleanarchitecture.domain.annotation.ExceptionType.Companion.SNACK
-import com.example.cleanarchitecture.domain.annotation.ExceptionType.Companion.TOAST
+import com.example.hiltcleanarchitecture1.domain.annotation.ExceptionType.Companion.ALERT
+import com.example.hiltcleanarchitecture1.domain.annotation.ExceptionType.Companion.DIALOG
+import com.example.hiltcleanarchitecture1.domain.annotation.ExceptionType.Companion.INLINE
+import com.example.hiltcleanarchitecture1.domain.annotation.ExceptionType.Companion.REDIRECT
+import com.example.hiltcleanarchitecture1.domain.annotation.ExceptionType.Companion.SNACK
+import com.example.hiltcleanarchitecture1.domain.annotation.ExceptionType.Companion.TOAST
 
 /**
  * Clear exception from Throwable

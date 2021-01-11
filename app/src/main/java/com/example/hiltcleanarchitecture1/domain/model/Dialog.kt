@@ -1,6 +1,6 @@
 package com.example.hiltcleanarchitecture1.domain.model
 
-import com.example.cleanarchitecture.domain.annotation.Action
+import com.example.hiltcleanarchitecture1.domain.annotation.Action
 
 data class Dialog(
     val title: String? = null,

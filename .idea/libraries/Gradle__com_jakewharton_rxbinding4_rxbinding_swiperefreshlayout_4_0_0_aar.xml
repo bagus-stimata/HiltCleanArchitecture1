@@ -2,9 +2,12 @@
   <library name="Gradle: com.jakewharton.rxbinding4:rxbinding-swiperefreshlayout:4.0.0@aar">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3509727e376c5b7c6b39044e786849e4/jetified-rxbinding-swiperefreshlayout-4.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c703427a3804970ad5e04602e69cbf9/jetified-rxbinding-swiperefreshlayout-4.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c703427a3804970ad5e04602e69cbf9/jetified-rxbinding-swiperefreshlayout-4.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c703427a3804970ad5e04602e69cbf9/jetified-rxbinding-swiperefreshlayout-4.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0ae71fe7ecd40cfea85f16b9dd942e7/jetified-rxbinding-swiperefreshlayout-4.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/96d7bce3b1ee8943ea4a6132f36da320/jetified-rxbinding-swiperefreshlayout-4.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/46c45f17722ec16faa4b4173c26d1fe1/jetified-rxbinding-swiperefreshlayout-4.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/96d7bce3b1ee8943ea4a6132f36da320/jetified-rxbinding-swiperefreshlayout-4.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/96d7bce3b1ee8943ea4a6132f36da320/jetified-rxbinding-swiperefreshlayout-4.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.rxbinding4/rxbinding-swiperefreshlayout/4.0.0/1378784e84eb97706409dc99217712e025c38d6c/rxbinding-swiperefreshlayout-4.0.0-javadoc.jar!/" />

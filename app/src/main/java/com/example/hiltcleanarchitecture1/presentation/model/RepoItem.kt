@@ -18,26 +18,30 @@ data class RepoItem(
     val ownerItem: OwnerItem?
 ) : ModelItem(), Parcelable
 
-class RepoItemMapper @Inject constructor(
-    private val ownerItemMapper: OwnerItemMapper
-) : ItemMapper<Item, RepoItem> {
-    override fun mapToPresentation(model: Item) = RepoItem(
-        id = model.id,
-        name = model.name,
-        fullName = model.fullName,
-        description = model.description,
-        url = model.url,
-        stars = (model.stars ?: 0).toString(),
-        ownerItem = model.owner?.let { ownerItemMapper.mapToPresentation(it) }
-    )
+//class RepoItemMapper @Inject constructor(
+//    private val ownerItemMapper: OwnerItemMapper
+//) : ItemMapper<Item, RepoItem> {
 
-    override fun mapToDomain(modelItem: RepoItem) = Item(
-        id = modelItem.id,
-        name = modelItem.name,
-        fullName = modelItem.fullName,
-        description = modelItem.description,
-        url = modelItem.url,
-        stars = modelItem.stars.toIntOrNull(),
-        owner = modelItem.ownerItem?.let { ownerItemMapper.mapToDomain(it) }
-    )
+class RepoItemMapper @Inject constructor() {
+
+//    override fun mapToPresentation(model: Item) = RepoItem(
+//        id = model.id,
+//        name = model.name,
+//        fullName = model.fullName,
+//        description = model.description,
+//        url = model.url,
+//        stars = (model.stars ?: 0).toString(),
+//        ownerItem = model.owner?.let { ownerItemMapper.mapToPresentation(it) }
+//    )
+//
+//    override fun mapToDomain(modelItem: RepoItem) = Item(
+//        id = modelItem.id,
+//        name = modelItem.name,
+//        fullName = modelItem.fullName,
+//        description = modelItem.description,
+//        url = modelItem.url,
+//        stars = modelItem.stars.toIntOrNull(),
+//        owner = modelItem.ownerItem?.let { ownerItemMapper.mapToDomain(it) }
+//    )
+
 }

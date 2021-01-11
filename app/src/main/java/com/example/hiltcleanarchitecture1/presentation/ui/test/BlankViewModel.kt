@@ -1,34 +1,36 @@
 package com.example.hiltcleanarchitecture1.presentation.ui.test
 
-import androidx.annotation.VisibleForTesting
 import androidx.hilt.lifecycle.ViewModelInject
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.hiltcleanarchitecture1.domain.usecase.item.SearchItemUseCase
-import com.example.hiltcleanarchitecture1.presentation.base.BaseViewModel
-import com.example.hiltcleanarchitecture1.presentation.extension.add
-import com.example.hiltcleanarchitecture1.presentation.model.RepoItem
-import com.example.hiltcleanarchitecture1.presentation.model.RepoItemMapper
-import com.example.hiltcleanarchitecture1.presentation.utils.RxUtils
-import io.reactivex.rxjava3.disposables.CompositeDisposable
-import io.reactivex.rxjava3.kotlin.addTo
-import timber.log.Timber
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Inject
+import javax.inject.Singleton
 
 //class BlankViewModel  @Inject constructor(
 //    private val searchItemUseCase: SearchItemUseCase,
 //    private val repoItemMapper: RepoItemMapper
 //)  : BaseViewModel() {
-class BlankViewModel  @Inject constructor(private val repoItemMapper: RepoItemMapper
-)  : BaseViewModel() {
 
-    val data = MutableLiveData<List<RepoItem>>()
-    val query = MutableLiveData<String>()
-    val loading = MutableLiveData<Boolean>().apply { postValue(false) }
+//class BlankViewModel  @ViewModelInject constructor(private val repoItemMapper: RepoItemMapper
+//)  : BaseViewModel() {
+
+class BlankViewModel  @ViewModelInject constructor(private val repoItemMapper: MyRepoItemMapper
+):ViewModel()  {
+
+//    val data = MutableLiveData<List<RepoItem>>()
+//    val query = MutableLiveData<String>()
+//    val loading = MutableLiveData<Boolean>().apply { postValue(false) }
+
+
 
     fun testAja() {
         println("Test aja")
     }
+
+
 
 //    fun searchRepo() = when (query.value.isNullOrEmpty()) {
 //        true -> Unit
@@ -45,8 +47,27 @@ class BlankViewModel  @Inject constructor(private val repoItemMapper: RepoItemMa
 //        }
 //    }
 
-    @VisibleForTesting
-    fun clear() {
-        super.onCleared()
+//    @VisibleForTesting
+//    fun clear() {
+//        super.onCleared()
+//    }
+
+}
+
+class MyRepoItemMapper @Inject constructor(){
+
+    fun doAThing(): String{
+        return "result: Repo Item Mapper Ini"
     }
 }
+
+//@InstallIn(SingletonComponent::class)
+//@Module
+//class MyModule{
+//
+//    @Singleton
+//    @Provides
+//    fun provideMyRepo(): MyRepoItemMapper {
+//        return MyRepoItemMapper()
+//    }
+//}
